@@ -557,7 +557,9 @@ def make_index(df, cols=META_IDX, unique=True):
     index = pd.MultiIndex.from_arrays(
         [_get_col(col) for col in cols], names=tuple(cols)
     )
-    return index.drop_duplicates() if unique else index
+    index = index.drop_duplicates() if unique else index
+    # unused categories of categorical columns would be kept as levels
+    return index.remove_unused_levels()
 
 
 def pattern_match(
