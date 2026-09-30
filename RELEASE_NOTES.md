@@ -1,6 +1,9 @@
 # Next Release
 
-- [#XXXX](https://github.com/IAMconsortium/pyam/pull/XXXX) Improve performance of `aggregate_region()` and `filter()`
+## Individual updates
+
+- [#1000](https://github.com/IAMconsortium/pyam/pull/1000) Improve performance of `aggregate_region()`, filtering and
+  index creation
 - [#999](https://github.com/IAMconsortium/pyam/pull/999) Support *+gcages** variable names in Kyoto-GHG aggregation
 
 # Release v3.5.0
